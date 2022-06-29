@@ -714,6 +714,7 @@ a.logo-a__SGTY{
 
   .heroes__item{
     margin-bottom: 15px;
+    position: relative;
   }
 
   .heroes__button {
@@ -862,6 +863,229 @@ a.logo-a__SGTY{
 .socials{
   width: 150px;
 }
+}
+.route{
+  position: relative;
+}
+.route::after {
+  content: 'экскурсия';
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* width: 50%; */
+  height: 39px;
+  background-color: #7e0516;
+  opacity:0.8;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.heroes__overlay{
+  width: 100%;
+  height: 54px;
+  position: absolute;
+  bottom: 75px;
+  /* left: 28%; */
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #646464;
+  z-index: 100;
+  
+}
+.heroes__overlay:hover{
+  background: rgb(2,0,36);
+background: linear-gradient(94deg, rgba(2,0,36,1) 0%, rgba(12,21,101,1) 40%, rgba(0,212,255,1) 100%);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.heroes__overlay a{
+  display: flex;
+}
+.heroes__overlay-player{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+#audio-box {
+	background-color: #2e3033;
+	box-shadow: 5px 10px 20px 5px rgba(204, 204, 204, 0.5);
+	color: #fff;
+	position: absolute;
+	width: 25%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2em;
+	z-index: 5;
+}
+#controls-wrapper {
+	text-align: justify;
+	user-select: none;
+}
+#rw,
+#ff,
+#play {
+	cursor: pointer;
+	user-select: none;
+}
+#time-wrapper {
+	text-align: justify;
+}
+#time-wrapper:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+/*Remove default styles*/
+input[type="range"] {
+	-webkit-appearance: none;
+	margin: 18px 0;
+	width: 100%;
+}
+input[type="range"]:focus {
+	outline: none;
+}
+/*Track & handle(thumb) styles*/
+/*Chrome*/
+input[type="range"]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 1em;
+	cursor: pointer;
+	background: #23b26d;
+	border-radius: 0;
+	border: 1px solid #23b26d;
+}
+input[type="range"]::-webkit-slider-thumb {
+	border: 1px solid #f50039;
+	height: 2em;
+	width: 16px;
+	border-radius: 3px;
+	background: #f50039;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -0.5em;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+	background: #23b26d;
+}
+/*Firefox*/
+input[type="range"]::-moz-range-track {
+	width: 100%;
+	height: 1em;
+	cursor: pointer;
+	background: #23b26d;
+	border-radius: 0;
+	border: 1px solid #23b26d;
+}
+input[type="range"]::-moz-range-thumb {
+	border: 1px solid #f50039;
+	height: 2em;
+	width: 16px;
+	border-radius: 3px;
+	background: #f50039;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+/*IE*/
+input[type="range"]::-ms-track {
+	width: 100%;
+	height: 1em;
+	cursor: pointer;
+	background: #23b26d;
+	border-radius: 0;
+	border: 1px solid #23b26d;
+}
+input[type="range"]::-ms-fill-lower {
+	background: #2a6495;
+	border: 0.2px solid #010101;
+	border-radius: 2.6px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type="range"]::-ms-fill-upper {
+	background: #3071a9;
+	border: 0.2px solid #010101;
+	border-radius: 2.6px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type="range"]::-ms-thumb {
+	border: 1px solid #f50039;
+	height: 2em;
+	width: 16px;
+	border-radius: 3px;
+	background: #f50039;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -0.5em;
+}
+input[type="range"]:focus::-ms-fill-lower {
+	background: #3071a9;
+}
+input[type="range"]:focus::-ms-fill-upper {
+	background: #367ebd;
+}
+#bars-box {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	opacity: 0;
+	transition: 2s;
+}
+.bar {
+	position: absolute;
+	bottom: 0;
+	width: 20%;
+	height: 50%;
+	animation-name: beat;
+	animation-duration: var(--bar-delay);
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+}
+#bars-box.active {
+	opacity: 1;
+	height: 100%;
+}
+.bar:nth-child(odd) {
+	background-color: green;
+}
+.bar:nth-child(even) {
+	background-color: red;
+}
+@keyframes beat {
+	0% {
+		height: var(--bar-max-height);
+	}
+	50% {
+		height: var(--bar-min-height);
+	}
+	100% {
+		height: var(--bar-max-height);
+	}
+}
+@media (max-width: 775px) {
+	#audio-box {
+		width: 75%;
+		padding: 1em;
+	}
 }
 
 @media(max-width: 900px)

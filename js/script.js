@@ -1,6 +1,6 @@
 
 const scrollFync = () => {
-    const headerLinks = document.querySelectorAll('.header-menu__link');
+    const headerLinks = document.querySelectorAll('.scroll');
     const buttons = document.querySelectorAll('.parallax__buttons a');
 
     let links = [...buttons, ...headerLinks]
@@ -157,3 +157,73 @@ window.addEventListener("resize", e => (width2 = carousel2.offsetWidth)); //even
 
 
 animationScroll();
+//плеер
+window.requestAnimationFrame =
+	window.requestAnimationFrame ||
+	window.mozRequestAnimationFrame ||
+	window.webkitRequestAnimationFrame ||
+	window.msRequestAnimationFrame ||
+	function (cb) {
+		setTimeout(cb, 17);
+	};
+var audio = document.getElementById("audio");
+var playBtn = document.getElementById("play");
+var prog = document.getElementById("progress");
+var playTime = document.getElementById("time-played");
+var ff = document.getElementById("ff");
+var rw = document.getElementById("rw");
+var bars = document.getElementById("bars-box");
+
+playBtn.addEventListener("click", function (e) {
+	if (audio.paused) {
+		audio.play();
+		playBtn.classList.remove("fa-play");
+		playBtn.classList.add("fa-pause");
+		bars.classList.add("active");
+	} else {
+		audio.pause();
+		playBtn.classList.remove("fa-pause");
+		playBtn.classList.add("fa-play");
+		bars.classList.remove("active");
+	}
+});
+
+rw.addEventListener("click", function (e) {
+	audio.currentTime -= 15;
+});
+
+ff.addEventListener("click", function (e) {
+	audio.currentTime += 15;
+});
+
+prog.addEventListener("mouseUp", function (e) {
+	audio.currentTime = prog.value;
+});
+
+function paddZero(i) {
+	if (i < 10) {
+		i = "0" + i;
+	}
+	return i;
+}
+
+function update() {
+	var played = audio.currentTime;
+	prog.value = audio.currentTime;
+	played =
+		played < 60
+			? "00:" + paddZero(Math.floor(played))
+			: paddZero(Math.floor(played / 60)) +
+			  ":" +
+			  paddZero(Math.floor(played % 60));
+	playTime.innerText = played;
+	if (audio.currentTime >= 151) {
+		playBtn.classList.remove("fa-pause");
+		playBtn.classList.add("fa-play");
+		audio.pause();
+		bars.classList.remove('active');
+	}
+	requestAnimationFrame(update);
+}
+
+update();

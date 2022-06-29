@@ -15,14 +15,12 @@
         <div class="header__wrap container">
             <div class="header__icons">
                 <div class="header-menu__logo">
-                    <img src="../images/RVIO_Logo_circle_font_Zaryadie.png" style = "width: 100%; height: auto;">
+                    <a href="https://rvio.histrf.ru/" class="logo-a__SGTY"><img src="../images/RVIO_Logo_circle_font_Zaryadie.png" class="logo-img__SGTY"> </a>
                 </div>
                 <div class="header-menu__sstu">
                     <a href="https://www.sstu.ru/" class="logo-a__SGTY"><img src="../images/sstu.png" class="logo-img__SGTY"></a>
                 </div>
             </div>
-                
-
             <div class="header__menu">
                 <div class="menu__menu-burger">
                     <span></span>
@@ -32,7 +30,7 @@
                         <li><a href="../index.html#about" class="header-menu__link">О проекте</a></li>
                         <li><a href="../index.html#map" class="header-menu__link">Улицы памяти</a></li>
                         <li><a href="../index.html#life" class="header-menu__link">Жизнь проекта</a></li>
-                        <li><a href="#" class="header-menu__link">Туристические маршруты</a></li>
+                        <li><a href="../All_routes/index.html" class="header-menu__link">Туристические маршруты</a></li>
                         <li><a href="../index.html#contacts" class="header-menu__link">Контакты</a></li>
                     </ul>
                 </nav>
@@ -51,13 +49,20 @@
                 <div class="card">
                     <a href="../Kupriyanov/index.html" class="heroes-cards__link"><img src="./img/а_и__куприянов.jpg" class="heroes-cards-link__img">А.И. Куприянов</a>
                 </div>
-                <div class="card">
+                <div class="card route" style="position: relative;">
                     <a href="../Holzunov/index.html" class="heroes-cards__link"><img src="./img/а_и__хользунов.jpg" class="heroes-cards-link__img">А.И. Хользунов</a>
                 </div>
                 <div class="card">
                     <a href="../Eremin/index.html" class="heroes-cards__link"><img src="./img/б_н__еремин.jpg" class="heroes-cards-link__img">Б.Н. Еремин</a>
                 </div>
-                <div class="card">
+                <div class="card route" style="position: relative;">
+                    <div class="heroes__overlay">
+                        <audio id="player-10" src="../audio/klochkov.mp4"></audio>
+                        <div class="heroes__overlay-player">
+                            <a onclick="document.getElementById('player-10').play()"><img src="../images/play.svg" style="height:52px;"></a>
+                            <a onclick="document.getElementById('player-10').pause()"><img src="../images/stop.svg" style="height:52px;"></a>
+                        </div>
+                        </div>	
                     <a href="../Klochkov/index.html" class="heroes-cards__link"><img src="./img/в_г__клочков.jpg" class="heroes-cards-link__img">В.Г. Клочков</a>
                 </div>
                 <div class="card">
@@ -69,7 +74,14 @@
                 <div class="card">
                     <a href="../Chemodurov/index.html" class="heroes-cards__link"><img src="./img/в_и__чемодуров.jpg" class="heroes-cards-link__img">В.И. Чемодуров</a>
                 </div>
-                <div class="card">
+                <div class="card route">
+                    <div class="heroes__overlay">
+                        <audio id="player" src="..//simbirtsev.mp4"></audio>
+                        <div class="heroes__overlay-player">
+                            <a onclick="document.getElementById('player').play()"><img src="../images/play.svg" style="height:52px;"></a>
+                            <a onclick="document.getElementById('player').pause()"><img src="../images/stop.svg" style="height:52px;"></a>
+                        </div>
+                        </div>
                     <a href="../Simbirtsev/index.html" class="heroes-cards__link"><img src="./img/в_н__симбирцев.jpg" class="heroes-cards-link__img">В.Н. Симбирцев</a>
                 </div>
                 <div class="card">
@@ -105,7 +117,14 @@
                 <div class="card">
                     <a href="../Batavin/index.html" class="heroes-cards__link"><img src="./img/п_ф__батавин.jpg" class="heroes-cards-link__img">П.Ф. Батавин</a>
                 </div>
-                <div class="card">
+                <div class="card route">
+                    <div class="heroes__overlay">
+                        <audio id="player-1" src="../audio/aronova.wav"></audio>
+                        <div class="heroes__overlay-player">
+                            <a onclick="document.getElementById('player-1').play()"><img src="../images/play.svg" style="height:52px;"></a>
+                            <a onclick="document.getElementById('player-1').pause()"><img src="../images/stop.svg" style="height:52px;"></a>
+                        </div>
+                        </div>
                     <a href="../Aronova/index.html" class="heroes-cards__link"><img src="./img/р_е__аронова.jpg" class="heroes-cards-link__img">Р.Е. Аронова</a>
                 </div>
                 <div class="card">
@@ -120,7 +139,14 @@
                 <div class="card">
                     <a href="../Panchenko/index.html" class="heroes-cards__link"><img src="./img/к_п__панченко.jpg" class="heroes-cards-link__img">К.А. Панченко</a>
                 </div>
-                <div class="card">
+                <div class="card route">
+                    <div class="heroes__overlay">
+                        <audio id="player-0" src="../audio/osipov.mp4"></audio>
+                        <div class="heroes__overlay-player">
+                            <a onclick="document.getElementById('player-0').play()"><img src="../images/play.svg" style="height:52px;"></a>
+                            <a onclick="document.getElementById('player-0').pause()"><img src="../images/stop.svg" style="height:52px;"></a>
+                        </div>
+                        </div>	
                     <a href="../Osipov/index.html" class="heroes-cards__link"><img src="./img/в_и__осипов.jpg" class="heroes-cards-link__img">В.И. Осипов</a>
                 </div>
                 <div class="card">
@@ -129,7 +155,14 @@
                 <div class="card">
                     <a href="../Rogozhin/index.html" class="heroes-cards__link"><img src="./img/в_а__рогожин.jpg" class="heroes-cards-link__img">В.А. Рогожин</a>
                 </div>
-                <div class="card">
+                <div class="card route">
+                    <div class="heroes__overlay">
+                        <audio id="player-2" src="../audio/raskova.wav"></audio>
+                        <div class="heroes__overlay-player">
+                            <a onclick="document.getElementById('player-2').play()"><img src="../images/play.svg" style="height:52px;"></a>
+                            <a onclick="document.getElementById('player-2').pause()"><img src="../images/stop.svg" style="height:52px;"></a>
+                        </div>
+                        </div>
                     <a href="../Raskova/index.html" class="heroes-cards__link"><img src="./img/m_m__raskova.jpg" class="heroes-cards-link__img">М.М. Раскова</a>
                 </div>
             </div>

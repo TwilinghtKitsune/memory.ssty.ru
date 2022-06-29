@@ -44,7 +44,7 @@ a{
     align-items: center;
 }
 header .header-menu__logo img{
-width: 8%;
+width: 147%;
 }
 .footer .header-menu__logo{
     flex-wrap: wrap;
@@ -57,7 +57,7 @@ width: 8%;
 }
 a.logo-a__SGTY{
 	display: flex;
-	padding-left: 10px;
+	padding-left: 30px;
 }
 .header__icons{
 	width: 30%;
@@ -161,7 +161,22 @@ a.logo-a__URBAS{
     right: 50px;
     box-shadow: 0 0 57px rgb(19 18 33 / 50%);
 }
-
+.button {
+    background: rgba(12, 21, 101, 0.9);
+    padding: 16px 86px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+button{
+    outline: none;
+    border:none;
+}
 .bread-crumbs{
     padding: 0 50px;
     padding-top: 50px;
@@ -172,7 +187,7 @@ a.logo-a__URBAS{
     text-decoration: underline;
 }
 
-.bread-crumbs a,p{
+.bread-crumbs a{
     color: #0c1565;
 }
 
@@ -183,6 +198,7 @@ a.logo-a__URBAS{
 .biography-container{
     padding: 0 50px;
     padding-bottom: 50px;
+    position: relative;
 }
 
 .biography__title{
@@ -213,7 +229,11 @@ footer p {
     margin-bottom: 0;
 }
 
-
+.biography-container p{
+    font-size:18px;
+    color:#333;
+    padding-bottom:10px;
+}
 
 
 @media (max-width: 680px){
@@ -368,7 +388,23 @@ footer p {
     padding: 0;
 }
 }
-
+.button__route{
+    position: absolute;
+    right:50px;
+    background: rgb(126 5 22);
+    padding: 11px 34px;
+    /* font-family: 'Noto Sans'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button__route:hover{
+    background-color:rgba(126, 5, 22, 0.7);
+}
 @media (max-width: 940px){
     .header__wrap {
         padding: 0;

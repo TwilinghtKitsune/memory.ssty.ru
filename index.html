@@ -11,6 +11,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans&display=swap"
 		rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/style_map.css">
 	<script defer src="js/script.js"></script>
@@ -26,7 +28,7 @@
 					<div class="parallax__header-menu__icons">
 						
 						<div class="parallax__header-menu__logo">
-							<img src="images/RVIO_Logo_circle_font_Zaryadie.png" class="logo-img__SGTY"> 
+							<a href="https://rvio.histrf.ru/"><img src="images/RVIO_Logo_circle_font_Zaryadie.png" class="logo-img__SGTY"> </a>
 						</div>
 							<div class="parallax_header-menu__sstu">
 								<a href="https://www.sstu.ru/" class="logo-a__SGTY"><img src="images/sstu.png" class="logo-img__SGTY"></a>
@@ -41,11 +43,12 @@
 					</div>
 					<nav class="header-menu__body">
 						<ul class="header-menu__list">
-							<li><a href="#about" class="header-menu__link">О проекте</a></li>
-							<li><a href="#map" class="header-menu__link">Улицы памяти</a></li>
-							<li><a href="#life" class="header-menu__link">Жизнь проекта</a></li>
-							<li><a href="#" class="header-menu__link">Туристические маршруты</a></li>
-							<li><a href="#contacts" class="header-menu__link">Контакты</a></li>
+							<li><a href="#about" class="header-menu__link scroll">О проекте</a></li>
+							<li><a href="#map" class="header-menu__link scroll">Улицы памяти</a></li>
+							<li><a href="#life" class="header-menu__link scroll">Жизнь проекта</a></li>
+							<li><a href="All_routes/index.html" class="header-menu__link" >Туристические маршруты</a></li>
+							<li><a href="#contacts" class="header-menu__link scroll">Контакты</a></li>
+							
 						</ul>
 					</nav>
 				</div>
@@ -57,6 +60,7 @@
 						<div class="parallax__buttons">
 							<a href="#map"><button class="goto-map button">Перейти к карте</button></a>
 							<a href="#heroes"><button class="about-hero button">Узнать о героях</button></a>
+							
 						</div>
 					</div>
 				</div>
@@ -68,18 +72,16 @@
 		<div class="container">
 			<h2 class="about__title">О проекте</h2>
 			<p class="animation-p _anim-items">
-				Патриотический проект "По улицам памяти" создан в целях сохранения и популяризации памяти о героической
-				истории Саратова, укрепления преемственности поколений путем трансляции нравственно-ценностных традиций
-				и убеждений.
+				Патриотический проект «По улицам памяти» создан в целях сохранения и популяризации памяти о героической истории Саратова, укрепления преемственности поколений путем трансляции нравственно-ценностных традиций и убеждений.
 			</p>
 			<p class="animation-p _anim-items">
-				Проект позволяет посетителям сайта СГТУ имени Гагарина Ю.А. найти на карте города Саратова стелы,
-				посвященные Героям Советского Союза, совершить туристическую экскурсию по улицам, носящим их имена,
-				узнать биографические сведения о героях, их фронтовых подвигах.
+				Здесь вы можете найти информацию о саратовцах – Героях Советского Союза, именами которых названы городские улицы.
 			</p>
 			<p class="animation-p _anim-items">
-				Проект стал результатом исследовательской и поисковой работы студентов Саратовского государственного
-				технического университета имени Гагарина Ю.А.
+				Проект позволяет посетителям сайта СГТУ имени Гагарина Ю.А. найти на карте города Саратова стелы, посвященные Героям Советского Союза, совершить туристическую экскурсию по улицам, носящим их имена, узнать биографические сведения о героях,  их фронтовых подвигах.
+			</p>
+			<p class="animation-p _anim-items">
+				Проект стал результатом исследовательской и поисковой работы студентов Саратовского государственного технического университета имени Гагарина Ю.А.
 			</p>
 		</div>
 	</section>
@@ -87,7 +89,10 @@
 	<section class="map" id="map">
 		<div class="container">
 			<h2>Улицы памяти</h2>
+			<p class="animation-p _anim-items" style="margin-bottom:40px;">На интерактивной карте звездочками обозначено местоположение памятных стел на улицах Саратова, носящих имена Героев Советского Союза, участников Великой Отечественной войны.</p>
+
 				<div id = "container_fot_map">
+
 					<div id = "moreData">
 						<div id = "divCross">
 							<img id="cross" type="image" src="images/cross.png" alt="Закрыть" onclick="closeMoreInf()">
@@ -105,15 +110,76 @@
 			<div id="heroes__wrapper">
 				<div id="heroes__carousel">
 					<div id="heroes__cards" class="heroes__cards">
-						<div class="heroes__item">
-							<a href="./Kupriyanov/index.html" class="heroes__cards-link"><img src="images/а_и__куприянов.jpg"
+						<div class="heroes__item route" style="position:relative">
+							<div class="heroes__overlay">
+								<audio id="player-2" src="audio/raskova.wav"></audio>
+								<div class="heroes__overlay-player">
+									<a onclick="document.getElementById('player-2').play()"><img src="images/play.svg" style="height:52px;"></a>
+									<a onclick="document.getElementById('player-2').pause()"><img src="images/stop.svg" style="height:52px;"></a>
+								</div>
+								</div>
+							<a href="./Raskova/index.html" class="heroes__cards-link"><img src="./img/m_m__raskova.jpg"
 									class="heroes__cards-link__img">
-								<h4>А.И. Куприянов</h4>
+								<h4>M.M. Раскова</h4>
 							</a>
 						</div>
-						<div class="heroes__item">
-							<a href="./Holzunov/index.html" class="heroes__cards-link"><img src="images/а_и__хользунов.jpg"
+					
+						<div class="heroes__item route" style="position:relative">
+							<div class="heroes__overlay">
+								<audio id="player-1" src="audio/aronova.wav"></audio>
+								<div class="heroes__overlay-player">
+									<a onclick="document.getElementById('player-1').play()"><img src="images/play.svg" style="height:52px;"></a>
+									<a onclick="document.getElementById('player-1').pause()"><img src="images/stop.svg" style="height:52px;"></a>
+								</div>
+								</div>
+							<a href="./Aronova/index.html" class="heroes__cards-link"><img src="./img/р_е__аронова.jpg"
 									class="heroes__cards-link__img">
+								<h4>Р.Е. Аронова</h4>
+							</a>
+						</div>
+					
+						<div class="heroes__item route" style="position:relative">
+							<div class="heroes__overlay">
+							<audio id="player" src="audio/simbirtsev.mp4"></audio>
+							<div class="heroes__overlay-player">
+								<a onclick="document.getElementById('player').play()"><img src="images/play.svg" style="height:52px;"></a>
+								<a onclick="document.getElementById('player').pause()"><img src="images/stop.svg" style="height:52px;"></a>
+							</div>
+							</div>					
+							<a href="./Simbirtsev/index.html" class="heroes__cards-link"><img src="./img/в_н__симбирцев.jpg"
+									class="heroes__cards-link__img">
+								<h4>В.Н. Симбирцев</h4>
+							</a>
+						</div>
+						<div class="heroes__item route" style="position:relative">
+							<div class="heroes__overlay">
+								<audio id="player-0" src="audio/osipov.mp4"></audio>
+								<div class="heroes__overlay-player">
+									<a onclick="document.getElementById('player-0').play()"><img src="images/play.svg" style="height:52px;"></a>
+									<a onclick="document.getElementById('player-0').pause()"><img src="images/stop.svg" style="height:52px;"></a>
+								</div>
+								</div>	
+							<a href="./Osipov/index.html" class="heroes__cards-link"><img src="./img/Осипов_В.И.jpg"
+									class="heroes__cards-link__img">
+								<h4>В.И. Осипов</h4>
+							</a>
+						</div>
+						<div class="heroes__item route" style="position:relative;">
+							<div class="heroes__overlay">
+								<audio id="player-10" src="audio/klochkov.mp4"></audio>
+								<div class="heroes__overlay-player">
+									<a onclick="document.getElementById('player-10').play()"><img src="images/play.svg" style="height:52px;"></a>
+									<a onclick="document.getElementById('player-10').pause()"><img src="images/stop.svg" style="height:52px;"></a>
+								</div>
+								</div>	
+							<a href="./Klochkov/index.html" class="heroes__cards-link"><img src="images/в_г__клочков.jpg"
+									class="heroes__cards-link__img">
+								<h4>В.Г. Клочков</h4>
+							</a>
+						</div>
+						<div class="heroes__item route" style="position:relative">
+							<a href="./Holzunov/index.html" class="heroes__cards-link"><img src="images/а_и__хользунов.jpg"
+									class="heroes__cards-link__img ">
 								<h4>А.И. Хользунов</h4>
 							</a>
 						</div>
@@ -123,16 +189,11 @@
 								<h4>Б.Н. Еремин</h4>
 							</a>
 						</div>
+						
 						<div class="heroes__item">
-							<a href="./Klochkov/index.html" class="heroes__cards-link"><img src="images/в_г__клочков.jpg"
+							<a href="./Kupriyanov/index.html" class="heroes__cards-link"><img src="images/а_и__куприянов.jpg"
 									class="heroes__cards-link__img">
-								<h4>В.Г. Клочков</h4>
-							</a>
-						</div>
-						<div class="heroes__item">
-							<a href="./Aronova/index.html" class="heroes__cards-link"><img src="./img/р_е__аронова.jpg"
-									class="heroes__cards-link__img">
-								<h4>Р.Е. Аронова</h4>
+								<h4>А.И. Куприянов</h4>
 							</a>
 						</div>
 						<div class="heroes__item">
@@ -207,12 +268,7 @@
 								<h4>И.Н. Посадский</h4>
 							</a>
 						</div>
-						<div class="heroes__item">
-							<a href="./Simbirtsev/index.html" class="heroes__cards-link"><img src="./img/в_н__симбирцев.jpg"
-									class="heroes__cards-link__img">
-								<h4>В.Н. Симбирцев</h4>
-							</a>
-						</div>
+					
 						<div class="heroes__item">
 							<a href="./Skomorohov/index.html" class="heroes__cards-link"><img src="./img/н_м__скоморохов.jpg"
 									class="heroes__cards-link__img">
@@ -243,12 +299,7 @@
 								<h4>Ф.А. Артемьев</h4>
 							</a>
 						</div>
-						<div class="heroes__item">
-							<a href="./Osipov/index.html" class="heroes__cards-link"><img src="./img/Осипов_В.И.jpg"
-									class="heroes__cards-link__img">
-								<h4>В.И. Осипов</h4>
-							</a>
-						</div>
+					
 						<div class="heroes__item">
 							<a href="./Panfilov/index.html" class="heroes__cards-link"><img src="./img/Панфилов_И.В.jpg"
 									class="heroes__cards-link__img">
@@ -261,12 +312,7 @@
 								<h4>В.А. Рогожин</h4>
 							</a>
 						</div>
-						<div class="heroes__item">
-							<a href="./Raskova/index.html" class="heroes__cards-link"><img src="./img/m_m__raskova.jpg"
-									class="heroes__cards-link__img">
-								<h4>M.M. Раскова</h4>
-							</a>
-						</div>
+					
 					</div>
 				</div>
 				<button id="prev">
@@ -309,16 +355,36 @@
 							class="life__cards-img">
 						</div>
 						<div class="life__item">
+							<img src="img/L9.jpg"
+							class="life__cards-img" height="321px">
+						</div>
+						<div class="life__item">
+							<img src="img/L10.jpg"
+							class="life__cards-img" height="321px">
+						</div>
+						<div class="life__item">
+							<img src="img/L8.jpg"
+							class="life__cards-img" height="321px">
+						</div>
+						<div class="life__item">
+							<img src="img/L11.jpg"
+							class="life__cards-img" height="321px">
+						</div>
+						<div class="life__item">
+							<img src="img/L12.jpg"
+							class="life__cards-img" height="321px">
+						</div>
+						<div class="life__item">
 							<img src="img/L2.jpg"
-							class="life__cards-img">
+							class="life__cards-img" height="321px">
 						</div>
 						<div class="life__item">
 							<img src="img/L3.jpg"
-							class="life__cards-img">
+							class="life__cards-img" height="321px">
 						</div>
 						<div class="life__item">
 							<img src="img/L4.jpg"
-							class="life__cards-img">
+							class="life__cards-img" height="321px">
 						</div>
 						<div class="life__item">
 							<img src="img/L5.jpg"
@@ -366,9 +432,14 @@
 	</section>
 
 	<section class="contacts" id="contacts">
-		<h2>Контакты</h2>
-		<div class="contacts__container">
-			<div class="socials">
+		<h2>Обратная связь</h2>
+		<div class="contacts__container" style="text-align:left">
+			<p class="animation-p _anim-items">Если вы обладаете дополнительной информацией по теме проекта, хотите ею поделиться или увидели неточность, будем рады услышать вас. </p>
+			<p  class="animation-p _anim-items">Контактный телефон – 99-86-57</p>
+			<p  class="animation-p _anim-items">Электронный адрес –   lazarevanv@sstu.ru</p>
+			<p class="animation-p _anim-items" style="margin-bottom:40px;">Наталья Викторовна Лазарева, заместитель руководителя культурно-просветительского центра «Музейное пространство» СГТУ имени Гагарина Ю.А. </p>
+			
+		<!-- 	<div class="socials">
 				<div class="contact__vk">
 					<a class="contact__icon" href="https://vk.com/inpitsstu"><img src="images/vk3.png" 
 						alt="vk logo"></a>
@@ -381,7 +452,7 @@
 					<a class="contact__icon" href="https://t.me/inpitsstu"><img src="images/telegram3.png"
 						alt="telegram logo"></a>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 
@@ -406,11 +477,13 @@
                     <img src="images/lib_logo.png" class="logo-img__MUS">
                 </a>
 			</div>
+			<p style="margin-top:30px;"><a href="Authors/index.html" style="color:#fff; text-decoration:underline;">Авторы проекта</a></p>
 			<p class="footer__copyright">© 2022 СГТУ имени Гагарина Ю.А.</p>
 			<p class="footer__description">Копирование материалов возможно только с разрешения авторов проекта.</p>
 		</div>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script defer src="js/Script_map.js"></script>
 </body>
 

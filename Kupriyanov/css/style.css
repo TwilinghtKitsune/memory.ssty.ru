@@ -44,7 +44,7 @@ a{
     align-items: center;
 }
 header .header-menu__logo img{
-width: 8%;
+width: 147%;
 }
 .footer .header-menu__logo{
     flex-wrap: wrap;
@@ -57,7 +57,7 @@ width: 8%;
 }
 a.logo-a__SGTY{
 	display: flex;
-	padding-left: 10px;
+	padding-left: 30px;
 }
 .header__icons{
 	width: 30%;

@@ -8,18 +8,8 @@ if (iconMenu) {
     })
 }
 
+setTimeout(function()
+{
+   document.body.classList.add('body_loading');
+}, 200);
 
-const bio = document.querySelector('.biography');
-const nameHero = document.querySelector('.hero__name');
-
-let past = nameHero.textContent;
-let arr = past.trim().split(' ').slice(0, -1);
-[arr[0], arr[1], arr[2]] = [arr[2], arr[0], arr[1]]
-
-let finName = arr.join(' ');
-
-bio.insertAdjacentHTML('beforebegin', `
-    <div class='container bread-crumbs'>
-        <a href='../index.html#map'>По улицам памяти</a> / <p>${finName}</p>
-    </div>
-`)

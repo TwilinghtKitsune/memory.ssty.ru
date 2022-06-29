@@ -22,7 +22,24 @@ a{
     text-decoration: none;
     color: white;
 }
-
+.button__route{
+    position: absolute;
+    right:50px;
+    background: rgb(126 5 22);
+    padding: 11px 42px;
+    /* font-family: 'Noto Sans'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border:none;
+}
+.button__route:hover{
+    background-color:rgba(126, 5, 22, 0.7);
+}
 .header{
     background-color: #7e0516;
     padding: 10px 0;
@@ -44,7 +61,7 @@ a{
     align-items: center;
 }
 header .header-menu__logo img{
-width: 8%;
+width: 147%;
 }
 .footer .header-menu__logo{
     flex-wrap: wrap;
@@ -57,7 +74,7 @@ width: 8%;
 }
 a.logo-a__SGTY{
 	display: flex;
-	padding-left: 10px;
+	padding-left: 30px;
 }
 .header__icons{
 	width: 30%;
@@ -172,7 +189,7 @@ a.logo-a__URBAS{
     text-decoration: underline;
 }
 
-.bread-crumbs a,p{
+.bread-crumbs a{
     color: #0c1565;
 }
 
@@ -183,6 +200,7 @@ a.logo-a__URBAS{
 .biography-container{
     padding: 0 50px;
     padding-bottom: 50px;
+    position: relative;
 }
 
 .biography__title{

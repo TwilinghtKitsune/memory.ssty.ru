@@ -3,7 +3,22 @@
     padding: 0;
 }
 
-
+.section-1{
+    display: flex;
+    margin-bottom:30px;
+}
+.text{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.image-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 /*smooth scroll*/
 html{
@@ -89,7 +104,7 @@ a.logo-a__URBAS{
 }
 .header-menu__logo{
 	display: flex;
-    width: 12%;
+    width: 8%;
     justify-content: space-between;
 }
 a.logo-a__SGTY{
@@ -97,7 +112,7 @@ a.logo-a__SGTY{
 	padding-left: 10px;
 }
 .header__icons{
-	width: 30%;
+	width: 50%;
   display: flex;
   align-items: center;
 }

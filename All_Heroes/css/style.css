@@ -61,9 +61,11 @@ a{
 }
 a.logo-a__SGTY{
 	display: flex;
-	padding-left: 10px;
+	padding-left: 30px;
 }
-
+header .header-menu__logo img{
+	width: 147%;
+	}
 .footer .header-menu__logo{
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -413,7 +415,45 @@ footer p {
 		grid-template-columns: repeat(1, 1fr);
 	}
 } */
-
+.route{
+	position: relative;
+  }
+  .route::after {
+	content: 'экскурсия';
+	position: absolute;
+	top: 0;
+	right: 0;
+	/* width: 50%; */
+	height: 17px;
+	background-color: #7e0516;
+	opacity:0.8;
+	color: #fff;
+	font-size: 12px;
+	padding: 10px;
+  }
+  
+  .heroes__overlay{
+	width: 100%;
+	height: 54px;
+	position: absolute;
+	bottom: 42px;
+	/* left: 28%; */
+	background: #fff;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	background-color: #646464;
+	z-index: 100;
+	
+  }
+  .heroes__overlay:hover{
+	background: rgb(2,0,36);
+  background: linear-gradient(94deg, rgba(2,0,36,1) 0%, rgba(12,21,101,1) 40%, rgba(0,212,255,1) 100%);
+	  background-size: 400% 400%;
+	  animation: gradient 5s ease infinite;
+  }
 @media (max-width: 610px){
 	.banner{
 		height: 28vh;

@@ -34,7 +34,7 @@ a{
 	text-decoration: none;
 	color: white;
 }
-
+/* 
 .header{
 	background-color: #7e0516;
 	padding: 10px 0;
@@ -125,7 +125,7 @@ a.logo-a__URBAS{
 	font-weight: 600;
 	text-transform: uppercase;
 	color: #e1dfdf;
-}
+} */
 
 .banner{ 
 	background-image: url(../img/banner.jpg);
@@ -187,17 +187,7 @@ a.logo-a__URBAS{
   transition: all 0.3s ease;
 }
 
-footer{
-	padding: 15px 0;
-	background-color: #333;
-}
 
-footer p {
-	color: #d0cbcb;
-	font-size: 14px;
-	line-height: 24px;
-	margin-bottom: 0;
-}
 
 @media (max-width: 1200px){
 	.heroes-cards{

@@ -1,0 +1,103 @@
+.header{
+	background-color: #7e0516;
+	padding: 10px 0;
+	z-index: 5;
+}
+
+.header__wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container{
+	margin: 0 10%;
+}
+.header__icons{
+	width: 30%;
+  display: flex;
+  align-items: center;
+}
+.header-menu__logo{
+	display: flex;
+    width: 12%;
+    justify-content: space-between;
+}
+a.logo-a__SGTY{
+	display: flex;
+	padding-left: 30px;
+}
+header .header-menu__logo img{
+	width: 147%;
+	}
+.footer .header-menu__logo{
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.logo-a_SGTY{
+	padding-right: 10px;
+}
+
+.logo-img_INPIT {
+	height: 35px;
+	padding-right: 10px;
+}
+
+a.logo-a__URBAS{
+	padding-right: 10px;
+  }
+  a.logo-a__ISPM{
+	padding-right: 10px;
+  }
+  a.logo-a__SEI{
+	padding-right: 10px;
+  }
+  a.logo-a__MUS{
+	padding-right: 10px;
+  }
+
+.header-menu__title{
+	color: white;
+	font-size: 12px;
+	line-height: 13px;
+	margin-left: 10px;
+}
+
+.header__menu{
+	display: flex;
+	align-items: center;
+}
+
+.header-menu__body{
+	margin: auto 0;
+}
+
+.header-menu__list{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-menu__list > li:not(:last-child){
+	margin-right: 20px;
+}
+
+.header-menu__link{
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #e1dfdf;
+}
+
+footer{
+	padding: 15px 0;
+	background-color: #333;
+}
+
+footer p {
+	color: #d0cbcb;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 0;
+}

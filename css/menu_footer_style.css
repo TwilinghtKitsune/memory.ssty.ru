@@ -12,6 +12,7 @@
 .container{
 	margin: 0 10%;
 }
+
 .header__icons{
 	width: 30%;
   display: flex;
@@ -113,9 +114,6 @@ footer p {
   }
   .logo-a__MUS{
 	padding-right: 10px;
-  }
-  .contacts h2 {
-	font-size: 19px;
   }
   .footer .parallax__header-menu__logo{
 	width: 100%;

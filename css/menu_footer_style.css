@@ -28,7 +28,7 @@ a.logo-a__SGTY{
 	padding-left: 30px;
 }
 header .header-menu__logo img{
-	width: 147%;
+	width: 50px;
 	}
 .footer .header-menu__logo{
 	flex-wrap: wrap;
@@ -45,18 +45,23 @@ header .header-menu__logo img{
 	padding-right: 10px;
 }
 
+
 a.logo-a__URBAS{
 	padding-right: 10px;
-  }
-  a.logo-a__ISPM{
-	padding-right: 10px;
-  }
-  a.logo-a__SEI{
-	padding-right: 10px;
-  }
-  a.logo-a__MUS{
-	padding-right: 10px;
-  }
+}
+
+a.logo-a__ISPM{
+padding-right: 10px;
+}
+
+a.logo-a__SEI{
+padding-right: 10px;
+}
+
+a.logo-a__MUS{
+padding-right: 10px;
+}
+
 
 .header-menu__title{
 	color: white;
@@ -107,43 +112,51 @@ footer p {
 
 .logo-a__URBAS{
 	padding-right: 10px;
-  }
-  .logo-a__ISPM{
+}
+
+.logo-a__ISPM{
 	padding-right: 10px;
-  }
-  .logo-a__SEI{
+}
+
+.logo-a__SEI{
 	padding-right: 10px;
-  }
-  .logo-a__MUS{
+}
+
+.logo-a__MUS{
 	padding-right: 10px;
-  }
-  .footer .parallax__header-menu__logo{
+}
+
+.footer .parallax__header-menu__logo{
 	width: 100%;
 	flex-wrap: wrap;
 	justify-content: space-around
-  }
-  .parallax__header {
+}
+
+.parallax__header {
 	display: flex;
 	padding: 30px 0px;
 	justify-content: space-between; 
-  }
-  .parallax__header-menu__logo {
+}
+
+.parallax__header-menu__logo {
 	display: flex;
 	width: 12%;
 	justify-content: space-between; 
-  }
-  footer {
+}
+
+footer {
 	padding: 2% 2%;
 	background-color: #333; }
-  
-  footer p {
+
+footer p {
 	color: #d0cbcb;
 	font-size: 14px;
 	line-height: 24px;
 	margin-bottom: 0; }
-  footer .parallax__header-menu__logo{
+	footer .parallax__header-menu__logo{
 	width: 13%;
-  }
-  .footer__copyright{
-	margin-top: 30px;
-  }
+}
+
+.footer__copyright{
+margin-top: 30px;
+}

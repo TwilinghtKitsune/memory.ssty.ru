@@ -26,10 +26,11 @@ function init(){
     // С json
     for(let i = 0; i < point.points.length; i++){
         marks[i] = new ymaps.Placemark([point.points[i].coordinates1, point.points[i].coordinates2], {
-            balloonContent: '<div class = "wrapper">' + 
-                            "<div class = 'content-image'> <img type='image2' src= " + point.points[i].balloonContentHeader + " alt=' '> </div>" +
-                            `<div class = 'content-body'> ${point.points[i].balloonContentBody} </div>` +
-                            '<div class = "content-footer"> <input type="button" class = "butMark" value="Подробнее..." onclick="moreInf(' + i + ')"> </<div></div>',
+            balloonContent: 
+                '<div class = "wrapper">' + 
+                "<div class = 'content-image'> <img type='image2' src= " + point.points[i].balloonContentHeader + " alt=' '> </div>" +
+                `<div class = 'content-body'> ${point.points[i].balloonContentBody} </div>` +
+                '<div class = "content-footer"> <input type="button" class = "butMark" value="Подробнее..." onclick="moreInf(' + i + ')"> </<div></div>',
             hintContent: point.points[i].hintContent,
         }, {
             iconLayout: 'default#image',
@@ -60,14 +61,16 @@ function moreInf(i) {
     myMap.balloon.close();
     document.getElementById("moreData").style.display = "block";
     document.getElementById("moreData").style.animation = "aniMoreData_1 0.9s linear both";
+    
     if(point.points[i].hintContent == "Памятник труженикам тыла")
-    document.getElementById("divForText").innerHTML = "<h><b>" + point.points[i].hintContent + "</b><br><br></h><img type='image' src= '" + point.points[i].src  + "' alt=' ' style = 'width: 200px; height: auto; margin-left: auto; margin-right: auto'><p><br>";
+        document.getElementById("divForText").innerHTML = "<h><b>" + point.points[i].hintContent + "</b><br><br></h><img type='image' src= '" + point.points[i].src  + "' alt=' ' style = 'width: 200px; height: auto; margin-left: auto; margin-right: auto'><p><br>";
     else 
         document.getElementById("divForText").innerHTML = "<h><b>" + point.points[i].hintContent + "</b><br><br></h><img type='image' src= '" + point.points[i].src  + "' alt=' ' style = 'width: 100px; height: auto; margin-left: auto; margin-right: auto'><p><br>" + point.points[i].text + "<br><br></p>" + "<button style = 'background: rgba(12, 21, 101, 0.9); color: white; padding: 10px 25px; border-radius: 13px;' onclick=" + '"' + "window.location.href = "  + "'" + point.points[i].onclick + "'" + '"' + "> Узнать больше</button>";
-    document.getElementById("divForText").style.display = "block";
-    document.getElementById("moreData").addEventListener('animationend', function() {
-        document.getElementById("moreData").style.display = "block";
-    });
+        document.getElementById("divForText").style.display = "block";
+        document.getElementById("moreData").addEventListener('animationend', function() {
+            document.getElementById("moreData").style.display = "block";
+        }          
+    );
 }
 
 function closeMoreInf() {

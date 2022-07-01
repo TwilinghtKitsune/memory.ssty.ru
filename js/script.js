@@ -70,6 +70,7 @@ if (animItems.length>0)
         }
     }
 
+
     function offset(el)
     {
         const rect = el.getBoundingClientRect(),
@@ -78,6 +79,7 @@ if (animItems.length>0)
         return{top: rect.top + scrollTop, left: rect.left + scrollLeft}
     }
 }
+
 
 
 //menu-burger

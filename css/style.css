@@ -219,31 +219,30 @@ img.logo-img__SGTY
   background-image: url(../img/background.jpg);
   background-size: cover;
   background-attachment: fixed;
-  height: 100%; }
-  .parallax__header {
-    display: flex;
-    padding: 30px 0px;
-    justify-content: space-between; }
-    .parallax__header-menu__logo {
-      display: flex;
-      width: 12%;
-      justify-content: space-between; }
-  .parallax-container {
-    display: flex;
-   max-width: 56%; }
-  .parallax-container__text {
-    padding-top: 170px; }
-    .parallax-container__text h1 {
-      font-family: 'Noto Sans', sans-serif;
-      font-weight: 500;
-      font-size: 3rem;
-      padding-bottom: 10px; }
-  .parallax__content {
-    height: 100vh; }
-  .parallax__buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px; }
+  height: 100%; 
+}
+
+.parallax-container {
+  display: flex;
+  max-width: 56%; 
+}
+.parallax-container__text {
+  padding-top: 170px; 
+}
+.parallax-container__text h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  padding-bottom: 10px; 
+}
+.parallax__content {
+  height: 100vh; 
+}
+.parallax__buttons {
+display: flex;
+justify-content: space-between;
+margin-top: 50px; 
+}
 
 .button {
   background: rgba(12, 21, 101, 0.9);
@@ -318,26 +317,7 @@ img.logo-img__SGTY
 
 
 
-    .logo-a__URBAS{
-      padding-right: 10px;
-    }
-    .logo-a__ISPM{
-      padding-right: 10px;
-    }
-    .logo-a__SEI{
-      padding-right: 10px;
-    }
-    .logo-a__MUS{
-      padding-right: 10px;
-    }
-    .contacts h2 {
-      font-size: 19px;
-    }
-    .footer .parallax__header-menu__logo{
-      width: 100%;
-      flex-wrap: wrap;
-      justify-content: space-around
-    }
+    
 
 
 

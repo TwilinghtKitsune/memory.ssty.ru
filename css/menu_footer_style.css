@@ -101,3 +101,49 @@ footer p {
 	line-height: 24px;
 	margin-bottom: 0;
 }
+
+.logo-a__URBAS{
+	padding-right: 10px;
+  }
+  .logo-a__ISPM{
+	padding-right: 10px;
+  }
+  .logo-a__SEI{
+	padding-right: 10px;
+  }
+  .logo-a__MUS{
+	padding-right: 10px;
+  }
+  .contacts h2 {
+	font-size: 19px;
+  }
+  .footer .parallax__header-menu__logo{
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around
+  }
+  .parallax__header {
+	display: flex;
+	padding: 30px 0px;
+	justify-content: space-between; 
+  }
+  .parallax__header-menu__logo {
+	display: flex;
+	width: 12%;
+	justify-content: space-between; 
+  }
+  footer {
+	padding: 2% 2%;
+	background-color: #333; }
+  
+  footer p {
+	color: #d0cbcb;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 0; }
+  footer .parallax__header-menu__logo{
+	width: 13%;
+  }
+  .footer__copyright{
+	margin-top: 30px;
+  }

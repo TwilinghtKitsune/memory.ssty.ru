@@ -282,6 +282,7 @@ footer p {
 		cursor: pointer;
 
 	}
+
 	.menu__menu-burger span,
 	.menu__menu-burger::before,
 	.menu__menu-burger::after{
@@ -292,31 +293,39 @@ footer p {
 		transition: all 0.3s ease 0s;
 		background-color: #fff;
 	}
+
 	.menu__menu-burger::before,
 	.menu__menu-burger::after{
 		content: "";
 	}
+
 	.menu__menu-burger::before{
 		top: 0;
 	}
+
 	.menu__menu-burger::after{
 		bottom: 0;
 	}
+
 	.menu__menu-burger span{
 		top: 50%;
 		transform:scale(1) translate(0px, -50%);
 	}
+
 	.menu__menu-burger._active span{
 		transform:scale(0) translate(0px, -50%);
 	}
+
 	.menu__menu-burger._active::before{
 		top: 50%;
 		transform: rotate(-45deg) translate(0px, -50%);
 	}
+
 	.menu__menu-burger._active::after{
 		bottom: 50%;
 		transform: rotate(45deg) translate(0px, 50%);
 	}
+
 	.header-menu__body{
 		position: fixed;
 		top: 0;
@@ -330,9 +339,11 @@ footer p {
 		overflow: auto;
 		z-index: 2;
 	}
+
 	.header-menu__body._active{
 		left: 0;
 	}
+
 	.header-menu__body._active::before{
 		content: "";
 		position: fixed;
@@ -343,17 +354,21 @@ footer p {
 		background-color: rgb(0, 0, 0);
 		z-index: 2;
 	}
+
 	.header-menu__list > li {
 		margin-bottom: 60px;
 		margin-right: 0;
 		flex-wrap: wrap;
 	}
+
 	.header-menu__list > li._active .menu_sub-list{
 		display: block;
 	}
+
 	.header-menu__list > li :last-child{
 		margin-bottom: 0px;
 	}
+
 	.header-menu__link {
 		font-size: 24px;
 	}
@@ -364,63 +379,77 @@ footer p {
 
 	.header__icons{
 		width: 50%;
-  display: flex;
-  align-items: center;
-	  }
+		display: flex;
+		align-items: center;
+	}
 
 	.hero__wrap{
 		flex-direction: column;
 		justify-content: center;
 		padding: 0 0;
 	}
+
 	.hero__photo{
 		position: static;
 		width: 45%;
 		display: inline-grid;
 		box-shadow: 0 28px 48px rgb(0 0 0 / 63%);
 	}
+
 	.biography-container{
 		padding: 0 0;
 	}
+
 	.hero__photo>img{
 		width: 90%;
 		border: 10px solid #fff;
 	}
+
    .hero__wrap>ul{
 	margin-bottom: 5%;
    }
+
    .hero{
 	padding: 10% 0;
    }
+
    .hero__title{
 	margin-bottom: 10%;
    }
+
    .hero__info{
 	font-size: 17px;
    }
+
    .hero__name{
 	font-size: 20px;
 	margin-top: 20px;
 	margin-bottom: 12px;
    }
+
    .container{
 	margin: 8px 5%;
    }
+
    .biography {
 	padding-top: 35px;
 	padding-bottom: 35px;
    }
+
    .biography__title {
 	margin: 10px 0;
 	font-size: 22px;;
    }
+
    div.container.biography-container>p{
 	font-size: 17px;
 	margin-bottom: 20px;
    }
+
    .header-menu__title{
 	font-size: 10px;
    }
+
    /* .header{
 	padding: 15px 0;
    } */
@@ -444,15 +473,19 @@ footer p {
 	.container{
 		margin: 0px 7%;
 	}
+
 	.hero__wrap{
 		padding: 0 0;
 	}
+
 	.hero__title{
 		flex: 0 1 50%;
 	}
+
 	.biography{
 		padding-top: 3%;
 	}
+
 	.biography-container{
 		padding: 0 2%;
 	}
@@ -478,6 +511,7 @@ footer p {
 	.banner{
 		height: 24vh;
 	}
+	
 	.heroes-cards{
 		grid-template-columns: repeat(1, 1fr);
 	}

@@ -1,11 +1,13 @@
 let myMap = null;
 ymaps.ready(init);
 function init(){
+    
     myMap = new ymaps.Map("map__wrapper", {
         center: [51.527735, 46.008753],
         zoom: 17,
         controls: ['zoomControl']
     },{suppressMapOpenBlock: true});
+      
     let marks = [];
     // point берется из файла соответствующей экскурсии (для каждой будет свой - holzunov.js и т.д.)
     for(let i = 0; i < point.points.length; i++){
@@ -15,13 +17,16 @@ function init(){
                             `<div class = 'content-body'> ${point.points[i].balloonContentBody} </div>` +
                             '</div>',
             hintContent: point.points[i].hintContent
-        }, {
+        }, 
+        
+        {
             iconLayout: 'default#image',
             iconImageHref: 'images/icon.png', // нужно заменить на другую, пока взяла первую попавшуюся
             iconImageSize: [40, 40],
             iconImageOffset: [-20, -20]
         });
     }
+
     let clusterer = new ymaps.Clusterer({
         clusterIcons: [
             {
@@ -33,6 +38,7 @@ function init(){
         showInAlphabeticalOrder: true,
         clusterDisableClickZoom: true,
     });
+
     clusterer.add(marks);
     myMap.geoObjects.add(clusterer);
 

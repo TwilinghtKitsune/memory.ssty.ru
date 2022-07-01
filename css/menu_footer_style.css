@@ -72,6 +72,8 @@ a.logo-a__URBAS{
 
 .header-menu__body{
 	margin: auto 0;
+	width: min-content;
+    text-align: center;
 }
 
 .header-menu__list{

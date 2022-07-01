@@ -14,6 +14,7 @@ body{
 body._lock{
 overflow: hidden;
 }
+
 li{
     list-style: none;
 }
@@ -28,6 +29,7 @@ a{
     text-decoration: none;
     color: white;
 }
+
 .button__route{
     position: absolute;
     right:50px;
@@ -43,10 +45,10 @@ a{
     transition: 0.3s;
     border:none;
 }
+
 .button__route:hover{
     background-color:rgba(126, 5, 22, 0.7);
 }
-
 
 .hero{ 
     background-color: #0c1565;
@@ -130,6 +132,6 @@ a{
     list-style-image: url("../img/star2.png");
 }
 
-
-
-
+.li_color {
+    color: rgb(51, 51, 51);
+}

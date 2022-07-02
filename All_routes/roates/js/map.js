@@ -18,7 +18,7 @@ function init(){
             hintContent: point.points[i].hintContent
         }, {
             iconLayout: 'default#image',
-            iconImageHref: 'images/icon.png', // нужно заменить на другую, пока взяла первую попавшуюся
+            iconImageHref: '../../img/326703_favorite_rate_star_icon.png', // нужно заменить на другую, пока взяла первую попавшуюся
             iconImageSize: [40, 40],
             iconImageOffset: [-20, -20]
         });
@@ -27,7 +27,7 @@ function init(){
     let clusterer = new ymaps.Clusterer({
         clusterIcons: [
             {
-                href: 'images/cluster.png', // тоже поменять иконку кластера. А может он вообще не нужен
+                href: '../../img/star.png', // тоже поменять иконку кластера. А может он вообще не нужен
                 size: [42, 42],
                 offset: [-20, -20]
             }],

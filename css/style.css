@@ -14,6 +14,10 @@ ul[class],
 ol[class] {
   padding: 0; }
 
+body._lock {
+  overflow: hidden;
+}
+
 /* Remove default margin */
 body,
 h1,
@@ -250,7 +254,7 @@ img.logo-img__SGTY
 
 .parallax__buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 50px; 
 }
 
@@ -502,11 +506,6 @@ footer .parallax__header-menu__logo {
 .animation-p._active{
   opacity: 1;
   transform: translate(0px, 0px);
-}
-
-.header__menu{
-  display: flex;
-  align-items: center;
 }
 
 .header-menu__body{

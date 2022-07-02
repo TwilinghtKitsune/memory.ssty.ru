@@ -7,7 +7,11 @@
     } 
 }
 
-@media (max-width: 680px){
+@media (max-width: 1280px) {
+    .parallax__header-menu__icons {
+        width: 50%;
+    }
+
     #heroes__cards{
         display: grid;
         grid-gap: 50%;
@@ -19,7 +23,7 @@
     .menu__menu-burger{
         z-index: 5;
         display: block;
-        position: relative;
+        position: fixed;
         width: 30px;
         height: 18px;
         cursor: pointer;
@@ -94,7 +98,6 @@
         top: 0;
         left: 0;
         height: 70px;
-        background-color: rgb(0, 0, 0);
         z-index: 2;
     }
 
@@ -120,9 +123,6 @@
         flex-direction: column;
     }
 
-
-
-
     .parallax{
         background-size: contain;
         height: 26vh;
@@ -130,9 +130,6 @@
 
     .parallax-container{
         max-width: 70%;
-    }
-    .parallax__header-menu__logo {
-        width: 32%;
     }
 
     a.logo-a__SGTY{
@@ -147,25 +144,13 @@
         padding-top: 0;
     }
 
-    .parallax-container__text p{
-        font-size: 11px;
-    }
-
-    .parallax__buttons{
-        display: none;
-    }
-
     .about {
         padding-top: 30px;
     }
 
     .about__title {
-        font-size: 19px;
+        font-size: 24px;
         margin-bottom: 18px;
-    }
-
-    .about p{
-        font-size: 14px;
     }
 
     .map {
@@ -174,8 +159,12 @@
 
 
     .map h2 {
-        font-size: 19px;
+        font-size: 24px;
         margin-bottom: 40px;
+    }
+
+    .life h2 {
+        font-size: 24px;
     }
 
     .heroes {
@@ -183,7 +172,7 @@
     } 
 
     .heroes h2{
-        font-size: 19px;
+        font-size: 24px;
         margin-bottom: 30px;
     }
 
@@ -218,7 +207,7 @@
     }
 
     .contacts h2 {
-        font-size: 19px;
+        font-size: 24px;
     }
 
     .contacts__container {
@@ -238,7 +227,7 @@
 
     .parallax{
         background-size: contain;
-        height: 45vh;
+        height: 70vh;
     }
 
     .parallax-container__text {
@@ -268,20 +257,6 @@
     }
     .about {
     padding-top: 50px;
-    }
-    .about__title {
-    font-size: 29px;
-    margin-bottom: 7%;
-    }
-
-    .map h2 {
-    margin-bottom: 7%;
-    font-size: 29px;
-    }
-
-    .heroes h2 {
-    font-size: 29px;
-    margin-bottom: 50px;
     }
 }
 
@@ -316,7 +291,7 @@
         height: 60vh;
     }
     .parallax-container__text {
-        padding-top: 60px;
+        padding-top: 40px;
     }
 
     .parallax-container__text h1 {
@@ -357,7 +332,6 @@
     }
 }
 
-
 @media (max-width: 775px) {
 	#audio-box {
 		width: 75%;
@@ -379,5 +353,10 @@
   }
 }
 
-
-
+@media(max-width: 680px)
+{
+    .parallax {
+        background-size: contain;
+        height: 60vh;
+    }
+}

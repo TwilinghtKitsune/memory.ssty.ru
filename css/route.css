@@ -22,6 +22,12 @@ body{
 body._lock{
 overflow: hidden;
 }
+
+.float_img{
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
 li{
     list-style: none;
 }
@@ -366,7 +372,7 @@ ol.listed li {
         top: 0;
         left: 0;
         height: 70px;
-        background-color: rgb(0, 0, 0);
+        /* background-color: rgb(0, 0, 0); */
         z-index: 2;
     }
 

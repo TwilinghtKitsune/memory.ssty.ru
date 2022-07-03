@@ -518,10 +518,6 @@ footer .parallax__header-menu__logo {
   justify-content: space-between;
 }
 
-.header-menu__list > li:not(:last-child){
-  margin-right: 20px;
-}
-
 .header-menu__link{  
 text-transform: uppercase;
 color: #e1dfdf;

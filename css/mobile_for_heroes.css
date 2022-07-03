@@ -1,5 +1,10 @@
 
 @media (max-width: 680px){
+    .bread-crumbs {
+        padding: 0 0;
+        padding-top: 20px;
+    }
+    
     .menu__menu-burger{
         z-index: 5;
         display: block;
@@ -78,7 +83,6 @@
         top: 0;
         left: 0;
         height: 70px;
-        background-color: rgb(0, 0, 0);
         z-index: 2;
     }
 

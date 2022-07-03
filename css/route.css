@@ -69,7 +69,6 @@ width: 8%;
 
 .header-menu__logo{
 	display: flex;
-    width: 12%;
     justify-content: space-between;
 }
 

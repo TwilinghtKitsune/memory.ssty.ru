@@ -384,6 +384,18 @@
         background-size: contain;
         height: 60vh;
     }
+
+    .card {
+        height: 200px;
+    }
+
+    #header_routesh {
+        width: 100%;
+    }
+
+    .page-link {
+        padding: 0;
+    }
 }
 
 @media(max-width: 500px)

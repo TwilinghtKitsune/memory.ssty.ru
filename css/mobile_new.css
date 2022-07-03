@@ -241,6 +241,7 @@
 
 @media(max-width: 830px) and (min-width: 680px){
 
+    
     .parallax{
         background-size: contain;
         height: 50vh;
@@ -364,6 +365,7 @@
 
 @media(max-width: 390px)
 {
+    
   .parallax-container{
     max-width: 90%;
   }
@@ -385,7 +387,7 @@
         height: 60vh;
     }
 
-    .card {
+    .card_route {
         height: 200px;
     }
 

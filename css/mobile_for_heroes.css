@@ -12,7 +12,11 @@
         width: 30px;
         height: 18px;
         cursor: pointer;
+    }
 
+    .button__route {
+        position: static;
+        font-size: unset;
     }
 
     .menu__menu-burger span,

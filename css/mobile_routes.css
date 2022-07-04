@@ -1,0 +1,29 @@
+@media (max-width: 1024px){
+    .section-1 {
+        flex-wrap: wrap;
+    }
+
+    .p_90width {
+        width: 100%;
+    }
+
+    .text-marg {
+        margin-left: 0px;
+    }
+
+    .image-text {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 680px){
+    .bread-crumbs {
+        padding: 0 0;
+        padding-top: 20px;
+    }
+
+    div.container.biography-container>p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}

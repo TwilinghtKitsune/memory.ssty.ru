@@ -131,7 +131,7 @@ const carousel2 = document.getElementById("life__carousel"),
   content2 = document.getElementById("life__cards"),
   next2 = document.getElementById("next2"),
   prev2 = document.getElementById("prev2"),
-  gridGap2 = 136;
+  gridGap2 = 1;
 
 
 next2.addEventListener("click", e => {

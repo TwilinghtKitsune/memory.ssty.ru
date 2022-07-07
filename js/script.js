@@ -103,7 +103,7 @@ const carousel = document.getElementById("heroes__carousel"),
   gridGap = 100;
 
 next.addEventListener("click", e => {
-  carousel.scrollBy(width+gridGap, 0);//move corusel
+  carousel.scrollBy(width-gridGap, 0);//move corusel
   if (carousel.scrollWidth !== 0) {
     prev.style.display = "flex";
   }
@@ -112,7 +112,7 @@ next.addEventListener("click", e => {
   }
 });
 prev.addEventListener("click", e => {
-  carousel.scrollBy(-(width+gridGap), 0);
+  carousel.scrollBy(-(width-gridGap), 0);
   if (carousel.scrollLeft - width<= 0) {
     prev.style.display = "none";
   }

@@ -12,9 +12,28 @@
         width: 50%;
     }
 
+    .heroes__cards-link__img {
+        margin-left: 0%;
+    }
+
+    .heroes__cards-link h4 {
+        margin-left: 0%;
+    }
+
+    #heroes__cards {
+        grid-gap: 10px; 
+    }
+
+    #next {
+        margin-right: -40px;
+    }
+
+    #prev {
+        margin-left: -40px;
+    }
+
     #heroes__cards{
         display: grid;
-        grid-gap: 50%;
         grid-auto-flow: column;
         margin: auto;
         box-sizing: border-box;
@@ -195,17 +214,15 @@
     .heroes__cards{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
     }
+
     .heroes__cards-link__img {
         width: 150px;
-        margin-left: 50%;
     }
 
     .heroes__cards-link h4{
         text-align: justify;
         font-size: 13px;
-        margin-left: 50%;
     }
 
     .heroes__item{
@@ -240,8 +257,6 @@
 }
 
 @media(max-width: 830px) and (min-width: 680px){
-
-    
     .parallax{
         background-size: contain;
         height: 50vh;
@@ -263,11 +278,6 @@
     margin-top: 24px;
     }
 
-    .heroes__cards-link__img {
-    width: 65%;
-    margin-left: 20%;
-    }
-
     .heroes__cards-link h4 {
     font-size: 14px;
 
@@ -278,7 +288,6 @@
 }
 
 @media(max-width: 1280px) and (min-width: 1025px){
-
     .parallax{
         background-size: contain;
         height: 60vh;
@@ -300,6 +309,9 @@
     margin-top: 24px;
     }
 
+    .heroes__overlay {
+        bottom: 50px;
+    }
 }
 
 @media(max-width: 1024px) and (min-width: 830px){
@@ -397,6 +409,34 @@
 
     .page-link {
         padding: 0;
+    }
+
+    .heroes__cards{
+        justify-content: normal;
+    }
+
+    .heroes__cards-link__img {
+        margin-left: 0%;
+    }
+
+    .heroes__cards-link h4 {
+        margin-left: 0%;
+    }
+
+    #heroes__cards {
+        grid-gap: 10px; 
+    }
+
+    .heroes__overlay {
+        bottom: 50px;
+    }
+
+    #next {
+        margin-right: -40px;
+    }
+
+    #prev {
+        margin-left: -40px;
     }
 }
 
